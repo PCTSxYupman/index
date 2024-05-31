@@ -4,11 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Microsoft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            margin-right: 20px;
+        }
+
+        .header select,
+        .header button {
+            margin-left: 10px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #ffcc00;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .main {
+            padding: 10px;
+            flex-grow: 1;
+        }
+
+        .main h3 {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        .main hr {
+            margin: 10px 0;
+        }
+
+        .main .special-feature {
+            background-color: #c0e7f3;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .main .news-links a {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
+
+    <div class="header">
+        <img src="https://i.imgur.com/mna6WM2.png" alt="Microsoft Logo" height="50">
+        <span>MICROSOFT: Where do you want to go today?</span>
+        <select>
+            <option>Select a Location</option>
+        </select>
+        <button>Go</button>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <p>Guides</p>
+            <p>Downloads</p>
+            <p>Internet</p>
+            <p>MSN</p>
+            <p>About Microsoft</p>
+            <div>
+                <p>Best experienced with:</p>
+                <img src="https://i.imgur.com/mna6WM2.png" alt="Microsoft Internet Explorer">
+                <p>Click here to start</p>
+            </div>
+            <div>
+                <p>We rate with RSACi</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="news-links">
+                <a href="#"><strong>MSNBC Delivers the News, When You Want It</strong></a>
+                <p>If you're on the Internet, MSNBC News Alert lets you know when a big story breaks. And MSNBC News
+                    Offline sends you a package of news, whenever you want it.</p>
+
+                <a href="#"><strong>We Are Almost Sold Out! Sign Up Today for Next Week's Microsoft Site Builder
+                        Conference</strong></a>
+                <p>Attend the conference Oct. 28-30 in San Jose and you'll be among the first to get the latest Visual
+                    Basic 5.0 Control Creation Edition, "Internet Studio," over 20 beta versions of products plus much
+                    more!</p>
+
+                <a href="#"><strong>Finally! Your Personal Web Server is Here!</strong></a>
+                <p>It defines scalable: The Personal Web Server makes it easy to publish on an intranet or for the Web.
+                    Download it free!</p>
+
+                <a href="#"><strong>Download These Three New Normandy Technologies!</strong></a>
+                <p>Microsoft Internet News Server lets you host electronic discussion groups. Microsoft Internet Chat
+                    Server is a scalable server for rich, real-time chat. Microsoft Content Replication System is for
+                    reliable, secure Internet publishing.</p>
+
+                <hr>
+
+                <div>
+                    <p><strong>News for you:</strong></p>
+                    <a href="#">Smallbiz</a>
+                    <a href="#">Industry</a>
+                    <a href="#">Web Builder</a>
+                    <a href="#">Developer</a>
+                    <a href="#">IT Execs</a>
+                    <a href="#">At Home</a>
+                    <a href="#">Games</a>
+                    <a href="#">Press</a>
+                    <a href="#">Shareholder</a>
+                    <a href="#">System Pros</a>
+                </div>
+
+                <hr>
+
+                <div class="special-feature">
+                    <strong>Microsoft Online Institute: A Success Story</strong>
+                    <p>Robert McIntosh is a successful Microsoft Certified Trainer, but not long ago he was a church
+                        youth director. Read how MOLI training helped him find an exciting new career.</p>
+                </div>
+
+                <hr>
+
+                <div>
+                    <p><strong>Visual C++</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
